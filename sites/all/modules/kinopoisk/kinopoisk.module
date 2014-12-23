@@ -1,0 +1,31 @@
+<?php
+
+function kinopoisk_field_formatter_info() {
+    return array(
+        'kinopoisk_formatter' => array(
+            'label' => t('Kinopoisk'),
+            'field types' => array('text','number_integer'),
+            'description' => t('Displays rating html-code from Kinopoisk by id.'),
+        ),
+    );
+} 
+
+
+function kinopoisk_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
+    $element = array();
+    $settings = $display['settings'];
+    
+    switch ($display['type']) {
+        case 'kinopoisk_formatter':
+        if (!empty($items)) {
+            foreach ($items as $delta => $item) {
+                $value = $item['value'];
+                $element[$delta]['#markup'] = "<a href='http://www.kinopoisk.ru/film/" . $value . "/'><img src='http://rating.kinopoisk.ru/" . $value . ".gif' border='0'></a>";
+            }
+        }
+        break;
+    }
+    return $element;
+}
+
+?>

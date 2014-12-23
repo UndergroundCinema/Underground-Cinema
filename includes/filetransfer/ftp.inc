@@ -62,15 +62,14 @@ class FileTransferFTPExtension extends FileTransferFTP implements FileTransferCh
   }
 
   protected function copyFileJailed($source, $destination) {
+    ftp_pasv($this->connection, true );
     if (!@ftp_put($this->connection,  $destination, $source, FTP_BINARY)) {
       throw new FileTransferException("Cannot move @source to @destination", NULL, array("@source" => $source, "@destination" => $destination));
     }
   }
 
   protected function createDirectoryJailed($directory) {
-    if (!ftp_mkdir($this->connection, $directory)) {
-      throw new FileTransferException("Cannot create directory @directory", NULL, array("@directory" => $directory));
-    }
+    @ftp_mkdir($this->connection, $directory);
   }
 
   protected function removeDirectoryJailed($directory) {

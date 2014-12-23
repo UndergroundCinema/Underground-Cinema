@@ -1,0 +1,4 @@
+name = kinopoisk
+description = Display info from kinopoisk
+core = 7.x
+
