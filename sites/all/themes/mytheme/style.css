@@ -1,8 +1,8 @@
 body { font: 0.8em/165% tahoma, arial, verdana, sans-serif, Lucida Sans; margin:0; padding:0; outline:0 none; vertical-align:baseline; }
 
-h1, h2, h3, h4, h5, h6 { margin:25px 0 20px 0; line-height:120%; text-shadow: 1px 1px 1px #EAF1EA; font-family: tahoma, arial, verdana, serif; }
+h1, h2, h3, h4, h5, h6 { margin:10px 0 10px 0; line-height:120%; text-shadow: 1px 1px 1px #EAF1EA; font-family: 'Lava', Georgia, serif; }
 
-h1 { font-size: 32px; margin:0 0 20px 0; }
+h1 { font-size: 32px; margin:0 0 15px 0; }
 
 h2 { font-size: 20px; color:#1487d4; font-weight:normal; }
 
@@ -25,7 +25,7 @@ input, textarea, select { font-family: Georgia, serif; }
 #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6,
 #footer-bottom h1, #footer-bottom h2, #footer-bottom h3, #footer-bottom h4, #footer-bottom h5, #footer-bottom h6 { text-shadow:none; }
 
-p { margin:0 0 25px 0; }
+p { margin:0 0 15px 0; }
 
 a, li a.active { text-decoration:none; }
 
@@ -125,7 +125,7 @@ blockquote { background:transparent url('images/blockquote.png') no-repeat top l
 */
 .region-sidebar-first .block .content, .region-sidebar-second .block .content, .panel-panel.panel-col-last .pane-content, .afisha_sub{ border:1px solid #ffffff; 
 -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;background: #fdfdfd; 
-padding: 20px; overflow:hidden; margin:0 0 40px 0;
+padding: 10px; overflow:hidden; margin:0 0 15px 0;
  /* shadow */
 -webkit-box-shadow: 0 2px 6px #efefef inset;  -moz-box-shadow:0 2px 6px #efefef inset;  box-shadow:0 2px 6px #efefef inset; }
 
@@ -601,7 +601,7 @@ ul.primary li a, ul.tabs li a { margin:0; padding: 4px 1em; display: inline-bloc
 }
 
 .panel-panel.panel-col-bottom .comment{
-    height:120px;
+    /*height:120px;*/
     padding:10px 10px 0;
 }
 
@@ -792,4 +792,49 @@ ul.primary li a, ul.tabs li a { margin:0; padding: 4px 1em; display: inline-bloc
     border-bottom: 1px solid #ccc;
 }
    
+.view-underground-cinema h2{
+    margin-top: 10px;
+    margin-bottom: 7px;
+    font-size: 20pt;
+}
+
+.view-underground-cinema .field-content p{
+    margin: 0 0 10px 0;
+    font-size: 12pt;
+    font-family: 'Lava', Georgia, serif;
+}
+
+.view-underground-cinema th, .view-underground-cinema td{
+    vertical-align: top;
+    width: 300px;
+    max-height: 200px;
+}
+
+.group_film .views-field-field-film-picture{
+    width:100px;
+    vertical-align:middle;
+}
+
+.group_film .views-field-field-film-picture img{
+    padding: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.group_film .views-field-nothing{
+    width:460px;
+}
+
+.group_film .views-field-nothing h2{
+    margin: 5px 0 5px 0; 
+}
+
+.group_film .views-field-nothing p{
+    margin: 0 0 5px 0;
+}
+
+.form-textarea{
+    height:80px;
+}
    
